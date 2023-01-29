@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <script type="text/javascript">
+        var username;
+        function acc(){
+            username=document.getElementById('username').value;
+            alert('Hello '+ username +'!');
+        }
+    </script>
+    <body>
+        <header>
+            <div id="laptab">
+                <div id="navbtn">
+                    <div id="btnlt">
+                        <a href="index.html">Home</a>
+                        <a href="members.html">Members</a>
+                        <a href="about.html">About</a>
+                    </div>
+                    <div id="navlogo">
+                        <p style="font-size: 1.8em; font-weight: bold;">Art Class</p>
+                    </div>
+                    <div id="navacc">
+                        <a href="account.html" style="color: #ca0000; font-size: 1.2em;">Account</a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile">
+                <div id="navbtnm">
+                    <div id="navlogom">
+                        <p style="font-size: 1.8em; font-weight: bold;">Art Class</p>
+                    </div>
+                    <div id="btns">
+                        <a href="index.html"><img src="imgs/icons/home.png"></a>
+                        <a href="members.html"><img src="imgs/icons/members.png"></a>
+                        <a href="about.html"><img src="imgs/icons/about.png"></a>
+                        <a href="account.html"><img src="imgs/icons/account.png"></a>
+                    </div> 
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="accountform">
+                <div id="container">
+                    <h2>Art Class</h2>
+                    <input id="username" type="text" name="uname" placeholder="Username">
+                    <input id="password" type="password" name="pword" placeholder="Password">
+                    <br>
+                    <a href="index.html">
+                        <button onclick="acc();">Log In</button>
+                    </a>
+                </div>
+            </div>
+        </main>    
+    </body>
+</html>
